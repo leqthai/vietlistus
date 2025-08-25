@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { FaMapMarkerAlt, FaTag } from "react-icons/fa";
-import { listings } from "../../../../data/listings";
+import listings from "../../../../data/listings";  // ✅ Correct
 
 export default function SubcategoryPage() {
   const router = useRouter();

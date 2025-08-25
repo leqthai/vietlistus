@@ -1,24 +1,21 @@
 const listings = [
   {
     id: 1,
-    category: "Cho Bán (For Sale)",
-    subcategory: "Điện Tử",
-    title: "Bán iPhone 14 Pro Max",
-    price: "$950",
-    description: "iPhone 14 Pro Max 256GB, còn bảo hành, tình trạng mới 99%",
-    location: "Westminster, CA",
-    postedAt: "2025-08-10",
+    slug: "example-listing",
+    title: "Example Listing",
+    description: "This is just a placeholder listing.",
+    category: "services",
+    subcategory: "cleaning",
   },
   {
     id: 2,
-    category: "Dịch Vụ (Services)",
-    subcategory: "Dịch Vụ Ô Tô",
-    title: "Rửa xe tại nhà",
-    price: "$40",
-    description: "Dịch vụ rửa xe tận nơi, sạch bóng như mới",
-    location: "San Jose, CA",
-    postedAt: "2025-08-15",
-  },
+    slug: "another-listing",
+    title: "Another Listing",
+    description: "Another example listing to test data.",
+    category: "products",
+    subcategory: "electronics",
+  }
 ];
 
+// ✅ Default export
 export default listings;
