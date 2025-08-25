@@ -1,35 +1,42 @@
-import React from "react";
+// pages/listings/[slug].js
+import { useRouter } from "next/router";
 import listings from "../../data/listings";
 
-export default function ListingPage({ listing }) {
-  if (!listing) {
-    return <div className="p-6">Listing not found</div>;
-  }
-
-  return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold">{listing.title}</h1>
-      <p className="mt-2 text-gray-700">{listing.description}</p>
-      <p className="mt-4 text-sm text-gray-500">Category: {listing.category}</p>
-      <p className="text-sm text-gray-500">Subcategory: {listing.subcategory}</p>
-    </div>
-  );
-}
-
-// ✅ Generate all valid listing paths
 export async function getStaticPaths() {
-  const paths = listings.map((item) => ({
-    params: { slug: String(item.slug) }, // 🔹 Ensure it's a STRING
+  const paths = listings.map((listing) => ({
+    params: { slug: listing.slug },
   }));
 
   return {
     paths,
-    fallback: false,
+    fallback: false, // 404 if slug not found
   };
 }
 
-// ✅ Provide listing data based on slug
 export async function getStaticProps({ params }) {
   const listing = listings.find((item) => item.slug === params.slug);
-  return { props: { listing: listing || null } };
+
+  return {
+    props: {
+      listing,
+    },
+  };
+}
+
+export default function ListingPage({ listing }) {
+  const router = useRouter();
+
+  // If the page is not generated yet (fallback true)
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1>{listing.title}</h1>
+      <p><strong>Category:</strong> {listing.category}</p>
+      <p><strong>Subcategory:</strong> {listing.subcategory}</p>
+      <p>{listing.description}</p>
+    </div>
+  );
 }
