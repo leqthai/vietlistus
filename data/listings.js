@@ -1,22 +1,24 @@
-export const listings = [
+const listings = [
   {
     id: 1,
-    title: "iPhone 15 Pro Max",
-    description: "Brand new, unopened box",
     category: "Cho Bán (For Sale)",
-    subcategory: "Điện Tử (Electronics)",
-    price: 1200,
-    image: "/images/iphone15.jpg",
-    date: "2025-08-20T12:30:00Z" // <-- IMPORTANT
+    subcategory: "Điện Tử",
+    title: "Bán iPhone 14 Pro Max",
+    price: "$950",
+    description: "iPhone 14 Pro Max 256GB, còn bảo hành, tình trạng mới 99%",
+    location: "Westminster, CA",
+    postedAt: "2025-08-10",
   },
   {
     id: 2,
-    title: "Samsung Washer",
-    description: "Great condition, barely used",
-    category: "Cho Bán (For Sale)",
-    subcategory: "Đồ Gia Dụng (Appliances)",
-    price: 450,
-    image: "/images/washer.jpg",
-    date: "2025-08-18T10:00:00Z"
-  }
+    category: "Dịch Vụ (Services)",
+    subcategory: "Dịch Vụ Ô Tô",
+    title: "Rửa xe tại nhà",
+    price: "$40",
+    description: "Dịch vụ rửa xe tận nơi, sạch bóng như mới",
+    location: "San Jose, CA",
+    postedAt: "2025-08-15",
+  },
 ];
+
+export default listings;
