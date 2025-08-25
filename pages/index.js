@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import categories from "../data/categories";
 
 export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState(Object.keys(categories)[0]);
+  const mainCategories = Object.keys(categories);
+  const [selectedCategory, setSelectedCategory] = useState(mainCategories[0]);
 
   return (
     <div className="flex min-h-screen bg-gray-50">
       {/* LEFT COLUMN - MAIN CATEGORIES */}
       <aside className="w-1/3 sm:w-1/4 border-r border-gray-200 bg-white px-3 pt-5">
+        {/* Logo */}
         <div className="flex justify-center mb-6">
           <img
             src="/logo-placeholder.png"
@@ -16,7 +18,7 @@ export default function Home() {
           />
         </div>
         <ul className="flex flex-col gap-2">
-          {Object.keys(categories).map((category) => (
+          {mainCategories.map((category) => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
