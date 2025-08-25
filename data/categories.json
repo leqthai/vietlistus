@@ -1,0 +1,32 @@
+{
+  "Cho Bán (For Sale)": {
+    "subcategories": [
+      { "vi": "Điện Tử (Electronics)", "en": "Electronics" },
+      { "vi": "Đồ Cho Trẻ Em (Kids & Baby)", "en": "Kids & Baby" },
+      { "vi": "Đồ Gia Dụng (Appliances)", "en": "Appliances" },
+      { "vi": "Đồ Thể Thao (Sports & Fitness)", "en": "Sports & Fitness" },
+      { "vi": "Khác (Miscellaneous)", "en": "Miscellaneous" },
+      { "vi": "Máy Móc & Dụng Cụ (Tools & Equipment)", "en": "Tools & Equipment" },
+      { "vi": "Nhạc & Giải Trí (Music & Entertainment)", "en": "Music & Entertainment" },
+      { "vi": "Nội Thất (Furniture)", "en": "Furniture" },
+      { "vi": "Nông Sản Nhà Trồng (Homegrown Produce)", "en": "Homegrown Produce" },
+      { "vi": "Quần Áo & Phụ Kiện (Clothing & Accessories)", "en": "Clothing & Accessories" },
+      { "vi": "Trang Sức (Jewelry)", "en": "Jewelry" },
+      { "vi": "Xe Cộ (Vehicles)", "en": "Vehicles" }
+    ]
+  },
+  "Dịch Vụ (Services)": {
+    "subcategories": [
+      { "vi": "Dịch Vụ Bất Động Sản (Real Estate Services)", "en": "Real Estate" },
+      { "vi": "Dịch Vụ Ô Tô (Automotive Services)", "en": "Automotive" },
+      { "vi": "Dịch Vụ Máy Tính (Computer & IT)", "en": "Computer & IT" }
+    ]
+  },
+  "Nhà Ở (Housing)": {
+    "subcategories": [
+      { "vi": "Nhà Cho Thuê (House For Rent)", "en": "House For Rent" },
+      { "vi": "Nhà Bán (House For Sale)", "en": "House For Sale" },
+      { "vi": "Phòng Cho Thuê (Room For Rent)", "en": "Room For Rent" }
+    ]
+  }
+}
